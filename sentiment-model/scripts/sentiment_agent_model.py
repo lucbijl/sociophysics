@@ -57,11 +57,6 @@ def sentiment_agent_model(import_posts, cardinality_S, string_start, string_end,
         # Determining if the state will be added to P with the post probability.
         if fct.post_boolean(v, params):
             df_P = pd.concat([df_P, pd.DataFrame([v])], ignore_index=True)
-        #    print('\n[x]')
-        #else: print('\n[ ]')
-        
-        #for key in u.keys():
-        #    print(f'{key}: {u[key]:.3f} to {v[key]:.3f}')
 
     # Redefining the list P of all posts.
     P = []
